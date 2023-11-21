@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+
+{% block title %}Contact Groups{% endblock %}
+
+{% block content %}
+    <h1>Contact Groups</h1>
+    <ul class="list-group">
+        {% for group in groups %}
+            <li class="list-group-item">{{ group.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
